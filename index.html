@@ -6,24 +6,30 @@
 <style>
 
 body {
-	margin:0px 0px; padding:0px;
-	text-align:center;
       	font-family: 'Lato';
         font-size: 20px;
-
+	display:inline-block;
 }
 
-#content {
-	position:absolute; 
-	top:0px; 
-	bottom:0px; 
-	left:0px; 
-	right:0px;
-	margin:auto; 
-	height:100px; 
-	width:100%;
+.content {
+   	width:300px;
+    	height:200px;
+    	position:absolute;
+    	left:50%;
+    	top:50%;
+    	margin:-100px 0 0 -150px;
+	text-align:center;
 }
 
+.delimiter {
+	color:#ccc;
+	font-size:10px;	
+}
+
+a {
+	font-size:16px;
+	padding:0 3px 0 3px;
+}
 
 a:link {
 	color:#000000;
@@ -44,15 +50,14 @@ a:hover {
 a:active {
 	color:#000000;
 	text-decoration:none;
-}
-
-p {
-	font-family:"Arial Black", Gadget, sans-serif
-}
+} 
 </style>
 </head>
 <body>
-<div id="Content">
-	<div><a href="mailto:igor.zapletnev@gmail.com">IGOR ZAPLETNEV</a></div>
-	<div><a href="http://twitter.com/zapletnev" target="_blank">Twitter.</a> <a href="https://github.com/zapletnev" target="_blank">Github.</a> <a href="http://linkedin.com/in/zapletnev" target="_blank">LinkedIn</a>. <a href="https://bitbucket.org/zapletnev" target="_blank">Bitbucket.</a> <a href="http://instagram.com/zapletnev" target="_blank">Instagram.</a> <a href="http://zapletnev.habrahabr.ru" target="_blank">Habrahabr.</a></div>
+<div class="content">
+	<div><a href="mailto:igor.zapletnev@gmail.com">IGOR ZAPLETNEV</a></div><br />
+
+	<div>desire / details / innovation<br>determination / insight<br>software engineering</div><br />
+	<div><a href="http://twitter.com/zapletnev" target="_blank">Twitter</a> <span class="delimiter">•</span> <a href="https://github.com/zapletnev" target="_blank">Github</a> <span class="delimiter">•</span> <a href="http://linkedin.com/in/zapletnev" target="_blank">LinkedIn</a> <span class="delimiter">•</span> <a href="https://bitbucket.org/zapletnev" target="_blank">Bitbucket</a>
+	<a href="http://instagram.com/zapletnev" target="_blank">Instagram</a> <span class="delimiter">•</span> <a href="http://zapletnev.habrahabr.ru" target="_blank">Habrahabr</a></div>
 </body>
